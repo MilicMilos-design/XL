@@ -143,7 +143,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .hero-inner { position: relative; z-index: 3; max-width: 700px; padding-block: 64px; }
 .hero h1 { font-size: clamp(2.75rem, 8vw, 5.5rem); margin: 18px 0; }
 .hero h1 .accent { color: var(--gold); font-style: italic; }
-.hero p { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--cream); opacity: .92; max-width: 52ch; }
+.hero p { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.3rem, 3vw, 1.75rem); line-height: 1.42; color: var(--cream); opacity: .95; max-width: 44ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 40px; color: var(--muted); font-size: .88rem; letter-spacing: .02em; }
 .hero-meta strong { color: var(--cream); font-weight: 700; }
