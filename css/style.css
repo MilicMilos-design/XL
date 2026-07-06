@@ -16,8 +16,8 @@
   --gold-2:   #e6cd8b;   /* svetli zlatni highlight */
   --gold-deep:#8a6d2f;   /* dublje zlato, senke */
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --r-card: 6px;
   --r-img: 4px;
@@ -57,7 +57,8 @@ ul { list-style: none; padding: 0; }
 ::selection { background: var(--gold); color: var(--ink); }
 
 /* ---------- Tipografija ---------- */
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.12; letter-spacing: -.005em; }
+/* Cormorant je nizak/lagan pa naslovi idu deblji (700) i malo veci da ne budu 'prefini' */
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.08; letter-spacing: 0; }
 .eyebrow {
   font-family: var(--font-sans);
   text-transform: uppercase;
