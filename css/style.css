@@ -216,6 +216,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
 .menu-item .mi-price { font-family: var(--font-display); color: var(--gold); font-size: 1.05rem; white-space: nowrap; font-style: italic; }
 .menu-item .mi-price.tbd { color: var(--muted); font-style: italic; font-size: .85rem; font-family: var(--font-sans); }
 .menu-item .mi-size { display: inline-block; margin-left: 8px; font-family: var(--font-sans); font-weight: 600; font-size: .68rem; letter-spacing: .02em; color: var(--gold); background: rgba(201,162,75,.1); border: 1px solid rgba(201,162,75,.32); border-radius: 999px; padding: 1px 8px; vertical-align: 2px; white-space: nowrap; }
+.size-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.size-legend span { font-size: .8rem; color: var(--muted); background: rgba(201,162,75,.08); border: 1px solid rgba(201,162,75,.28); border-radius: 999px; padding: 5px 14px; }
+.size-legend b { color: var(--gold); font-weight: 700; margin-right: 4px; }
 
 .menu-note {
   margin-top: 40px; padding: 18px 22px; border-radius: var(--r-card);
