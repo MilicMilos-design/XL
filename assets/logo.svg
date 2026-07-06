@@ -1,0 +1,11 @@
+<svg width="210" height="56" viewBox="0 0 210 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="XL Pizzeria Sremska Mitrovica">
+  <!-- XL wordmark -->
+  <text x="0" y="35" font-family="Fraunces, Georgia, serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f3ead6">XL</text>
+  <!-- pizzeria -->
+  <text x="70" y="26" font-family="Fraunces, Georgia, serif" font-size="19" font-weight="600" font-style="italic" letter-spacing="0.5" fill="#c9a24b">pizzeria</text>
+  <!-- ornament underline -->
+  <line x1="70" y1="34" x2="182" y2="34" stroke="#c9a24b" stroke-width="1"/>
+  <rect x="123" y="31.5" width="5" height="5" rx="1" fill="#c9a24b" transform="rotate(45 125.5 34)"/>
+  <!-- pun naziv grada -->
+  <text x="70" y="49" font-family="Manrope, sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.4" fill="#b0a184">SREMSKA MITROVICA</text>
+</svg>

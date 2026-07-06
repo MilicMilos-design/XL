@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meni — XL Pizzeria Sremska Mitrovica | Pica, roštilj, testenine, poslastice</title>
+  <meta name="description" content="Kompletan meni XL Pizzerie: pica iz krušne peći, roštilj, testenine, palačinke, salate, doručak, domaće poslastice i pića. Naruči 022/621-360.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- INFO TRAKA -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="tb-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Trg Ćire Milekića 18, Sremska Mitrovica</span>
+      <span class="tb-right"><a href="tel:+38122621360"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>022/621-360</a><span>Radimo svaki dan &middot; 07&ndash;00h</span></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="XL Pizzeria početna"><img src="assets/logo.svg" alt="XL Pizzeria" class="brand-mark"></a>
+      <nav class="nav-links" aria-label="Glavna navigacija">
+        <a href="index.html">Početna</a>
+        <a href="meni.html" aria-current="page">Meni</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:+38122621360" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Naruči
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="Otvori meni" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg"><img src="assets/img/hero.jpg" alt=""></div>
+      <div class="page-hero-inner">
+        <span class="eyebrow">Naša ponuda</span>
+        <h1>Meni</h1>
+        <span class="tricolor"><i></i><i></i><i></i></span>
+        <p class="lead">Sve iz naše kuhinje i krušne peći — od jutarnjeg doručka do večernje pice, uz domaće poslastice.</p>
+      </div>
+    </section>
+
+    <section class="section--tight container">
+      <!-- Tabovi -->
+      <div class="menu-tabs" role="tablist" aria-label="Kategorije menija">
+        <button class="menu-tab" role="tab" aria-selected="true" data-target="pica" id="tab-pica">Pica</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="testa" id="tab-testa">Testenine i palačinke</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="rostilj" id="tab-rostilj">Roštilj</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="dorucak" id="tab-dorucak">Doručak</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="salate" id="tab-salate">Salate i predjela</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="poslastice" id="tab-poslastice">Poslastičarnica</button>
+        <button class="menu-tab" role="tab" aria-selected="false" tabindex="-1" data-target="pica-drinks" id="tab-drinks">Pića</button>
+      </div>
+
+      <!-- PICA -->
+      <div class="menu-panel is-active" id="pica" role="tabpanel" aria-labelledby="tab-pica">
+        <div class="menu-cat-banner">
+          <img src="assets/img/pizza-capricciosa.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">01 &mdash; Pizza</span>
+            <h2>Pica iz krušne peći</h2>
+            <p>Prečnik 32 cm. Dodatni prilozi na zahtev.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Margherita<span class="mi-desc">Paradajz, mocarela, bosiljak</span></span><span class="mi-price">690 din</span></div>
+          <div class="menu-item"><span class="mi-name">Capricciosa<span class="mi-desc">Šunka, šampinjoni, kačkavalj</span></span><span class="mi-price">820 din</span></div>
+          <div class="menu-item"><span class="mi-name">Vesuvio<span class="mi-desc">Šunka, kačkavalj, paradajz</span></span><span class="mi-price">780 din</span></div>
+          <div class="menu-item"><span class="mi-name">Quattro Stagioni<span class="mi-desc">Četiri godišnja doba</span></span><span class="mi-price">860 din</span></div>
+          <div class="menu-item"><span class="mi-name">Quattro Formaggi<span class="mi-desc">Četiri vrste sira</span></span><span class="mi-price">890 din</span></div>
+          <div class="menu-item"><span class="mi-name">Vegetariana<span class="mi-desc">Sezonsko povrće, kačkavalj</span></span><span class="mi-price">790 din</span></div>
+          <div class="menu-item"><span class="mi-name">Slaninska<span class="mi-desc">Domaća slanina, luk, kačkavalj</span></span><span class="mi-price">850 din</span></div>
+          <div class="menu-item"><span class="mi-name">Piccante<span class="mi-desc">Ljuta kobasica, feferoni</span></span><span class="mi-price">870 din</span></div>
+          <div class="menu-item"><span class="mi-name">Napolitana<span class="mi-desc">Inćuni, kapari, masline</span></span><span class="mi-price">840 din</span></div>
+          <div class="menu-item"><span class="mi-name">Tuna<span class="mi-desc">Tunjevina, luk, masline</span></span><span class="mi-price">880 din</span></div>
+          <div class="menu-item"><span class="mi-name">XL Specijal<span class="mi-desc">Bogata pica po receptu kuće</span></span><span class="mi-price">980 din</span></div>
+          <div class="menu-item"><span class="mi-name">Calzone<span class="mi-desc">Preklopljena pica, šunka i sir</span></span><span class="mi-price">860 din</span></div>
+        </div>
+      </div>
+
+      <!-- TESTA / PALAČINKE -->
+      <div class="menu-panel" id="testa" role="tabpanel" aria-labelledby="tab-testa">
+        <div class="menu-cat-banner">
+          <img src="assets/img/pasta.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">02 &mdash; Pasta</span>
+            <h2>Testenine</h2>
+            <p>Domaće njoke, špagete, penne i tortelini.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Špagete Bolonjeze<span class="mi-desc">Sos od mlevenog mesa</span></span><span class="mi-price">720 din</span></div>
+          <div class="menu-item"><span class="mi-name">Špagete Karbonara<span class="mi-desc">Slanina, jaje, pavlaka, parmezan</span></span><span class="mi-price">740 din</span></div>
+          <div class="menu-item"><span class="mi-name">Njoke Gorgonzola<span class="mi-desc">Kremasti sos od gorgonzole</span></span><span class="mi-price">760 din</span></div>
+          <div class="menu-item"><span class="mi-name">Penne Quattro Formaggi<span class="mi-desc">Četiri sira</span></span><span class="mi-price">750 din</span></div>
+          <div class="menu-item"><span class="mi-name">Tortelini sa pavlakom<span class="mi-desc">Punjeni tortelini</span></span><span class="mi-price">730 din</span></div>
+          <div class="menu-item"><span class="mi-name">Lazanje<span class="mi-desc">Slojevite sa bolonjeze sosom</span></span><span class="mi-price">780 din</span></div>
+        </div>
+        <h2 class="menu-cat-title" style="margin-top:40px">Palačinke</h2>
+        <p class="menu-cat-note">Slane kao obrok, slatke za desert.</p>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Slana — šunka i sir<span class="mi-desc">Sa pavlakom</span></span><span class="mi-price">490 din</span></div>
+          <div class="menu-item"><span class="mi-name">Slana — piletina<span class="mi-desc">Piletina, kačkavalj, sos</span></span><span class="mi-price">540 din</span></div>
+          <div class="menu-item"><span class="mi-name">Eurokrem<span class="mi-desc">Klasika za sve uzraste</span></span><span class="mi-price">380 din</span></div>
+          <div class="menu-item"><span class="mi-name">Plazma<span class="mi-desc">Plazma i čokolada</span></span><span class="mi-price">400 din</span></div>
+          <div class="menu-item"><span class="mi-name">Orah i med<span class="mi-desc">Domaći orah</span></span><span class="mi-price">420 din</span></div>
+        </div>
+      </div>
+
+      <!-- ROŠTILJ -->
+      <div class="menu-panel" id="rostilj" role="tabpanel" aria-labelledby="tab-rostilj">
+        <div class="menu-cat-banner">
+          <img src="assets/img/grill.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">03 &mdash; Roštilj</span>
+            <h2>Sa roštilja</h2>
+            <p>Uz prilog po izboru: pomfrit, kajmak ili svež hleb.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Ćevapi (10 kom)<span class="mi-desc">Sa lukom i lepinjom</span></span><span class="mi-price">690 din</span></div>
+          <div class="menu-item"><span class="mi-name">Pljeskavica<span class="mi-desc">200 g, sa prilogom</span></span><span class="mi-price">720 din</span></div>
+          <div class="menu-item"><span class="mi-name">Vešalica<span class="mi-desc">Svinjska, roštilj</span></span><span class="mi-price">820 din</span></div>
+          <div class="menu-item"><span class="mi-name">Pileći batak<span class="mi-desc">Sa roštilja</span></span><span class="mi-price">760 din</span></div>
+          <div class="menu-item"><span class="mi-name">Ražnjići<span class="mi-desc">Svinjski ili pileći</span></span><span class="mi-price">840 din</span></div>
+          <div class="menu-item"><span class="mi-name">Mešano meso<span class="mi-desc">Za dvoje, bogata porcija</span></span><span class="mi-price">980 din</span></div>
+          <div class="menu-item"><span class="mi-name">Punjena pljeskavica<span class="mi-desc">Sa kačkavaljem i slaninom</span></span><span class="mi-price">890 din</span></div>
+        </div>
+      </div>
+
+      <!-- DORUČAK -->
+      <div class="menu-panel" id="dorucak" role="tabpanel" aria-labelledby="tab-dorucak">
+        <div class="menu-cat-banner">
+          <img src="assets/img/cat_dorucak.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">04 &mdash; Colazione</span>
+            <h2>Doručak</h2>
+            <p>Dostupno od jutra — počnite dan kod nas.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Jaja na oko (2 kom)<span class="mi-desc">Sa hlebom</span></span><span class="mi-price">280 din</span></div>
+          <div class="menu-item"><span class="mi-name">Kajgana<span class="mi-desc">Od tri jaja</span></span><span class="mi-price">320 din</span></div>
+          <div class="menu-item"><span class="mi-name">Omlet sa šunkom i sirom<span class="mi-desc"></span></span><span class="mi-price">420 din</span></div>
+          <div class="menu-item"><span class="mi-name">Omlet sa šampinjonima<span class="mi-desc"></span></span><span class="mi-price">420 din</span></div>
+          <div class="menu-item"><span class="mi-name">Viršle sa kačkavaljem<span class="mi-desc"></span></span><span class="mi-price">360 din</span></div>
+          <div class="menu-item"><span class="mi-name">Pohovan kačkavalj<span class="mi-desc">Sa tartar sosom</span></span><span class="mi-price">480 din</span></div>
+        </div>
+      </div>
+
+      <!-- SALATE / PREDJELA -->
+      <div class="menu-panel" id="salate" role="tabpanel" aria-labelledby="tab-salate">
+        <div class="menu-cat-banner">
+          <img src="assets/img/cat_salata.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">05 &mdash; Insalate</span>
+            <h2>Salate</h2>
+            <p>Sveže, uz svaki obrok.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Šopska salata<span class="mi-desc">Paradajz, krastavac, sir</span></span><span class="mi-price">360 din</span></div>
+          <div class="menu-item"><span class="mi-name">Srpska salata<span class="mi-desc">Paradajz, luk, feferoni</span></span><span class="mi-price">320 din</span></div>
+          <div class="menu-item"><span class="mi-name">Grčka salata<span class="mi-desc">Feta, masline, povrće</span></span><span class="mi-price">420 din</span></div>
+          <div class="menu-item"><span class="mi-name">Vitaminska salata<span class="mi-desc">Sezonsko povrće</span></span><span class="mi-price">380 din</span></div>
+        </div>
+        <h2 class="menu-cat-title" style="margin-top:40px">Predjela</h2>
+        <p class="menu-cat-note">Topla i hladna predjela.</p>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Pohovane pečurke<span class="mi-desc">Sa tartar sosom</span></span><span class="mi-price">520 din</span></div>
+          <div class="menu-item"><span class="mi-name">Pomfrit<span class="mi-desc">Sa kačkavaljem opciono</span></span><span class="mi-price">280 din</span></div>
+          <div class="menu-item"><span class="mi-name">Sirni tanjir<span class="mi-desc">Izbor domaćih sireva</span></span><span class="mi-price">560 din</span></div>
+        </div>
+      </div>
+
+      <!-- POSLASTIČARNICA -->
+      <div class="menu-panel" id="poslastice" role="tabpanel" aria-labelledby="tab-poslastice">
+        <div class="menu-cat-banner">
+          <img src="assets/img/about-dessert.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">06 &mdash; Dolci</span>
+            <h2>Poslastičarnica</h2>
+            <p>Domaći kolači i torte — sveže svakog dana. Torte po porudžbini za slavlja.</p>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Parče torte<span class="mi-desc">Izbor iz vitrine</span></span><span class="mi-price">320 din</span></div>
+          <div class="menu-item"><span class="mi-name">Baklava<span class="mi-desc">Domaća, sa orasima</span></span><span class="mi-price">300 din</span></div>
+          <div class="menu-item"><span class="mi-name">Krempita<span class="mi-desc">Klasična</span></span><span class="mi-price">280 din</span></div>
+          <div class="menu-item"><span class="mi-name">Sladoled (kugla)<span class="mi-desc">Razne arome</span></span><span class="mi-price">120 din</span></div>
+          <div class="menu-item"><span class="mi-name">Torta po porudžbini<span class="mi-desc">Za rođendane i slavlja</span></span><span class="mi-price tbd">na upit</span></div>
+        </div>
+      </div>
+
+      <!-- PIĆA -->
+      <div class="menu-panel" id="pica-drinks" role="tabpanel" aria-labelledby="tab-drinks">
+        <div class="menu-cat-banner">
+          <img src="assets/img/cat_pica.jpg" alt="">
+          <div class="mcb-text">
+            <span class="num">07 &mdash; Bevande</span>
+            <h2>Pića</h2>
+            <p>Kafa, sokovi, pivo i vino.</p>
+          </div>
+        </div>
+        <h2 class="menu-cat-title">Topli napici</h2>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Espresso</span><span class="mi-price">140 din</span></div>
+          <div class="menu-item"><span class="mi-name">Domaća kafa</span><span class="mi-price">140 din</span></div>
+          <div class="menu-item"><span class="mi-name">Kapućino</span><span class="mi-price">180 din</span></div>
+          <div class="menu-item"><span class="mi-name">Nes kafa</span><span class="mi-price">180 din</span></div>
+          <div class="menu-item"><span class="mi-name">Topla čokolada</span><span class="mi-price">200 din</span></div>
+          <div class="menu-item"><span class="mi-name">Čaj</span><span class="mi-price">140 din</span></div>
+        </div>
+        <h2 class="menu-cat-title" style="margin-top:40px">Bezalkoholna pića</h2>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Coca-Cola / Fanta / Sprite (0.25)</span><span class="mi-price">180 din</span></div>
+          <div class="menu-item"><span class="mi-name">Ceđena pomorandža</span><span class="mi-price">280 din</span></div>
+          <div class="menu-item"><span class="mi-name">Prirodni sok (0.2)</span><span class="mi-price">200 din</span></div>
+          <div class="menu-item"><span class="mi-name">Mineralna / kisela voda</span><span class="mi-price">140 din</span></div>
+          <div class="menu-item"><span class="mi-name">Energetsko piće (0.25)</span><span class="mi-price">220 din</span></div>
+        </div>
+        <h2 class="menu-cat-title" style="margin-top:40px">Pivo i vino</h2>
+        <div class="menu-list">
+          <div class="menu-item"><span class="mi-name">Točeno pivo (0.3)</span><span class="mi-price">200 din</span></div>
+          <div class="menu-item"><span class="mi-name">Flaširano pivo (0.33)</span><span class="mi-price">220 din</span></div>
+          <div class="menu-item"><span class="mi-name">Vino — čaša (0.2)</span><span class="mi-price">240 din</span></div>
+          <div class="menu-item"><span class="mi-name">Somersby (0.3)</span><span class="mi-price">260 din</span></div>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <strong>Napomena o cenama:</strong> prikazane cene su okvirne i služe za prikaz ponude. Konačne cene se preuzimaju iz zvaničnog cenovnika lokala pre objave sajta. Za tačnu ponudu i porudžbine pozovite <a href="tel:+38122621360" style="color:var(--gold-2)">022/621-360</a>.
+      </div>
+    </section>
+
+    <section class="quote-band reveal">
+      <span class="qb-orn"><i></i><span class="gem"></span><i></i></span>
+      <p class="q">„Dobar obrok se ne žuri — <b>uživajte</b> u svakom zalogaju."</p>
+      <p class="sig">Buon appetito</p>
+    </section>
+
+    <section class="section--tight container">
+      <div class="cta-banner reveal">
+        <h2>Spremni za porudžbinu?</h2>
+        <p>Besplatna kućna dostava ili preuzimanje u lokalu. Pozovite nas — spremamo odmah.</p>
+        <div class="hero-actions">
+          <a href="tel:+38122621360" class="btn btn--primary">Pozovi 022/621-360</a>
+          <a href="https://wolt.com/en/srb/sremska-mitrovica/restaurant/xl-picerija" target="_blank" rel="noopener" class="btn btn--ghost">Naruči preko Wolt-a</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/logo.svg" alt="XL Pizzeria"></div>
+          <p>Pica, roštilj i domaća poslastičarnica u srcu Sremske Mitrovice. Već dvadeset godina.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/xlpizzeria.rs/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/p/Xl-Pizzeria-100077171096664/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Stranice</h4>
+          <a href="index.html">Početna</a><a href="meni.html">Meni</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <a href="tel:+38122621360">022/621-360</a><a href="tel:+38122621900">022/621-900</a>
+          <p>Trg Ćire Milekića 18<br>22000 Sremska Mitrovica</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> XL Pizzeria. Sva prava zadržana.</span>
+        <span>Radimo svaki dan &middot; Besplatna dostava</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
