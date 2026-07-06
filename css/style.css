@@ -5,16 +5,16 @@
 
 /* ---------- Tokeni ---------- */
 :root {
-  --ink:      #0b0a08;   /* topla, gotovo crna baza */
-  --ink-2:    #121009;   /* kartice, sekcije */
-  --ink-3:    #1a1710;   /* elevacija 2, hover */
-  --line:     #2c2519;   /* topli tamno-zlatni border */
-  --line-2:   #3a301f;   /* jači border/frame */
-  --cream:    #f3ead6;   /* glavni tekst (topla bela) */
-  --muted:    #b0a184;   /* sekundarni tekst (muljano zlato) */
-  --gold:     #c9a24b;   /* primarni zlatni akcenat */
-  --gold-2:   #e6cd8b;   /* svetli zlatni highlight */
-  --gold-deep:#8a6d2f;   /* dublje zlato, senke */
+  --ink:      #0a0806;   /* espresso crna — topla, duboka, 'skupa' */
+  --ink-2:    #15110c;   /* kartice, sekcije */
+  --ink-3:    #201a12;   /* elevacija 2, hover */
+  --line:     #302818;   /* topli tamno-zlatni border */
+  --line-2:   #46381f;   /* jači border/frame */
+  --cream:    #f4ecd8;   /* glavni tekst (topla ivory) */
+  --muted:    #b3a582;   /* sekundarni tekst */
+  --gold:     #d1a44e;   /* topli amber/med — unikatnije od obicnog zlata */
+  --gold-2:   #f2d78f;   /* champagne highlight (vrh gradijenta) */
+  --gold-deep:#986f2c;   /* dublje zlato, senke */
 
   --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
